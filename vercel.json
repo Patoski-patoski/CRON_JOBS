@@ -1,6 +1,17 @@
 {
-  "crons": [{
-    "path": "/api/cron",
-    "schedule": "/3 * * * *"
-  }]
+	"version": 2,
+	"builds": [{
+		"src":"cron.js",
+		"use": "@vercel/static-build"
+	}
+	],
+	"routes": [{
+		"src": "/cron",
+		"dest": "cron.js"
+	}
+	],
+	"functions":{
+		"crons": [
+			"schedule": "/3 * * * *"
+	}]
 }
