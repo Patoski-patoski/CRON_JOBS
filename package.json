@@ -2,10 +2,10 @@
   "name": "cron_jobs",
   "version": "1.0.0",
   "description": "Let's cron the jobs",
-  "main": "index.js",
+  "main": "cron.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vecel build && vercel export"
+    "build": "echo 'No build step needed'",
+    "start": "node cron.js"
   },
   "keywords": [],
   "author": "",
