@@ -10,6 +10,9 @@
   }],
   "crons": [{
     "path": "/cron",
-    "schedule": "*/3 * * * *"
-  }]
+    "schedule": "*0 1 * * *"
+  }],
+  "installCommand": "npm install",
+  "buildCommand": "echo 'No build step needed'",
+  "devCommand": "node cron.js"
 }

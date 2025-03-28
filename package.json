@@ -4,9 +4,11 @@
   "description": "Let's cron the jobs",
   "main": "cron.js",
   "scripts": {
+    "install": "npm install",
     "build": "echo 'No build step needed'",
-    "start": "node cron.js"
-  },
+    "start": "node cron.js",
+    "dev": "node cron.js"
+ },
   "keywords": [],
   "author": "",
   "license": "ISC",
